@@ -70,6 +70,9 @@ async def dispatch(request: Request):
     """
     All events would sent through this endpoint,
     only differentiating factor is the type of event coming through
+
+    Using dynamic functions to handle all events
+
     """
     body = await request.json()
     delivery_id = body['delivery_id']
